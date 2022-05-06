@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+  font-size: 28px;
+  color: white;
+  font-family: Orbitron;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url("images/space1-new.jpg");
+}
+
+h2 {
+  font-size: larger;
+  color: goldenrod;
+  margin-top: 1rem;
+  margin-bottom: -0.5rem;
+}
+
+.ships {
+  width: 50vw;
+  height: 100vh;
+  margin: 50px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid: auto/repeat(40, 1fr);
+  gap: 2px;
+  background-color: black;
+  border-radius: 1rem;
+  border: goldenrod 2px solid;
+}
+
+.ships > div:first-child {
+  grid-column: span 40;
+}
+
+.ships > div:nth-child(n+2):nth-child(-n+6) {
+  grid-column: span 8;
+}
+
+.ships > div:nth-child(n+7):nth-child(-n+14) {
+  grid-column: span 5;
+}
+
+.ships__mother {
+  width: 200px;
+}
+
+.ships__explosion {
+  width: 70px;
+}
+
+.ships__defence {
+  width: 100px;
+}
+
+.ships__attack {
+  width: 70px;
+}
+
+.button {
+  height: 10vh;
+  display: flex;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #15153f;
+  color: white;
+  border: 0.5px solid gold;
+  border-radius: 0.25rem;
+  font-size: bold;
+  margin-left: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #aeb1b1;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
