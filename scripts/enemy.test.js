@@ -4,7 +4,7 @@ describe("EnemyShip class", () => {
     test("Should return a ship object", () => {
         const output = new EnemyShip("motherShip", 100, 9, 1, '<img src="/images/motherShip.png">');
         expect(output).toEqual({
-            name: 'Mother', 
+            name: 'motherShip', 
             health: 100, 
             damagePoints: 9, 
             numberOfShips: 1,
@@ -18,7 +18,7 @@ describe("EnemyShip class", () => {
             health: 333, 
             damagePoints: 52, 
             numberOfShips: 11,
-            image: '<img src="/images/mother-ship.png">'
+            shipImage: '<img src="/images/motherShip.png">'
         });
     });
     test("Should return an array", () => {

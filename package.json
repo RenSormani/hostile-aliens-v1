@@ -1,0 +1,23 @@
+{
+  "name": "hostile-aliens-v1",
+  "version": "1.0.0",
+  "description": "A \"space invaders\"-style game using HTML, CSS and JavaScript. Destroy the MotherShip to save the Earth by diminishing her HealthPoints and those of the Attack and Defence Ships at random.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenSormani/hostile-aliens-v1.git"
+  },
+  "author": "Renato Sormani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenSormani/hostile-aliens-v1/issues"
+  },
+  "homepage": "https://github.com/RenSormani/hostile-aliens-v1#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^28.0.3"
+  }
+}
