@@ -76,7 +76,3 @@ const resetGame = () => {
 };
 
 document.querySelector("#button").addEventListener("click", resetGame);
-<<<<<<< HEAD
-
-=======
->>>>>>> 3cdfb0b35bec6c28a9fc7264623123954dedc9ac
