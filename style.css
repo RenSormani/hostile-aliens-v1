@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-image: url("images/space1-new.jpg");
+  background-image: url("/images/space1-new.jpg");
 }
 
 h2 {
@@ -88,6 +88,7 @@ button:hover {
   color: white;
   transition: 0.1s ease-in-out;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1120px) {
   .ships {
@@ -170,3 +171,5 @@ button:hover {
     font-size: 1rem;
   }
 }
+=======
+>>>>>>> 3cdfb0b35bec6c28a9fc7264623123954dedc9ac
