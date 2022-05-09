@@ -51,6 +51,7 @@ const hitTarget = () => {
     }
 }
 
+
 // gameOver occurs when the motherShip is destroyed
 const gameOver = () => {
     if (enemyArr.some(ship => ship.name === "motherShip" && ship.health <= 0)) {
@@ -75,3 +76,4 @@ const resetGame = () => {
 };
 
 document.querySelector("#button").addEventListener("click", resetGame);
+

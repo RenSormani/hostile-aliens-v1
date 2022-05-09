@@ -1,7 +1,7 @@
 import { EnemyShip } from "./enemy.js";
 
 describe("EnemyShip class", () => {
-    test("Should return a ship object", () => {
+    test("Should return an enemy ship object", () => {
         const output = new EnemyShip("motherShip", 100, 9, 1, '<img src="/images/motherShip.png">');
         expect(output).toEqual({
             name: 'motherShip', 
@@ -11,7 +11,7 @@ describe("EnemyShip class", () => {
             shipImage: '<img src="/images/motherShip.png">'
         });
     });
-    test("Should return the correct key/value pairs", () => {
+    test("Should return the key/value pairs", () => {
         const output = new EnemyShip("Other Ship", 333, 52, 11, '<img src="/images/motherShip.png">');
         expect(output).toEqual({
             name: 'Other Ship', 
