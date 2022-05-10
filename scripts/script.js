@@ -41,7 +41,7 @@ const hitTarget = () => {
     if (targetShip.health <= 0) {
         let i = enemyArr.indexOf(targetShip);
         if (i != -1) {
-            targetShip.shipImage = '<img class = "ships__explosion" src="/images/explosion.png">'
+            targetShip.shipImage = '<img class = "ships__explosion" src="./images/explosion.png">'
             targetShip.health = "";
             setTimeout(() => {
                 enemyArr.splice(i, 1);
