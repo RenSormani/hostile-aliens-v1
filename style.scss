@@ -117,7 +117,12 @@ h2 {
       }
       .ships__attack {
         width: 40px;
-      }}
+      }
+    
+      .ship__points {
+        font-size: 0.75rem;
+    }
+    }
 
       @media screen and (max-width: 775px) {
         .ships {
@@ -146,6 +151,49 @@ h2 {
           }
         
           button {
-           width: 17vw;
-           font-size: 1rem;
-          }}
+            padding-bottom: 1.25rem;
+            width: 17vw;
+            height: 5vh;
+          }
+
+          .button__reset-game {
+            font-size: 0.7rem;
+          }
+
+          .button__shoot {
+            font-size: 0.7rem;
+          }
+
+        .ship__points {
+            font-size: 0.65rem;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        .button__reset-game {
+            font-size: 0.5rem;
+          }
+
+          .button__shoot {
+            font-size: 0.5rem;
+          }
+        }
+
+    @media screen and (max-width: 375px) {
+        button {
+            padding-bottom: 1rem;
+            width: 17vw;
+            height: 1vh;
+        }    
+        
+        .button__reset-game {
+            font-size: 0.4rem;
+            padding-right: 2rem;
+
+        }
+    
+        .button__shoot {
+            font-size: 0.4rem;
+            margin-left: -0.05rem;
+        }
+    }
