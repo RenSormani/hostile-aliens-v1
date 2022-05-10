@@ -7,16 +7,16 @@ let enemyArr = [];
 
 // Creates an array of all ships (ie motherShip, defenceShips and attackShips)
 const getAllShips = () => {
-    const motherShip = new EnemyShip("motherShip", 100, 9, 1, '<img class = "ships__mother" src="/images/motherShip.png">');
-    const defenceShip = new EnemyShip("defenceShip", 80, 10, 5, '<img class = "ships__defence" src="/images/defenceShip.png">');
-    const attackShip = new EnemyShip("attackShip", 45, 12, 8, '<img class ="ships__attack" src="/images/attackShip.png">');
+    const motherShip = new EnemyShip("motherShip", 100, 9, 1, '<img class = "ships__mother" src="./images/motherShip.png">');
+    const defenceShip = new EnemyShip("defenceShip", 80, 10, 5, '<img class = "ships__defence" src="./images/defenceShip.png">');
+    const attackShip = new EnemyShip("attackShip", 45, 12, 8, '<img class ="ships__attack" src="./images/attackShip.png">');
     enemyArr = motherShip.getShipsArr().concat(defenceShip.getShipsArr(), attackShip.getShipsArr());
     return enemyArr;
 }
 
 // Use shipsContainer to display all ships and their health on the screen
 const displayShips = () => {
-    shipsContainer.innerHTML = enemyArr.map(ship => `<div>${ship.shipImage}<br>${ship.health}</div>`).join(" ");
+    shipsContainer.innerHTML = enemyArr.map(ship => `<div>${ship.shipImage}<br><span class="ship__points">${ship.health}</span></div>`).join(" ");
 }
 
 //Starter game settings
